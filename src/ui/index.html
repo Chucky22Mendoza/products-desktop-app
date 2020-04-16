@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron & MySQL</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 my-auto p-4">
+                <form class="card card-body" id="productForm">
+                    <div class="form-group">
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Product's Name..."
+                            class="form-control"
+                            required
+                            autofocus
+                        >
+                    </div>
+                    <div class="form-group">
+                        <input
+                            type="number"
+                            id="price"
+                            step="any"
+                            placeholder="Product's Price..."
+                            class="form-control"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <textarea
+                            id="description"
+                            rows="3"
+                            placeholder="Product's Description..."
+                            class="form-control"
+                            required
+                        ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary btn-block">SAVE</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <div id="products">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
